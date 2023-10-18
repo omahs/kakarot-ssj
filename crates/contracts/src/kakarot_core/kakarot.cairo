@@ -131,7 +131,7 @@ mod KakarotCore {
             self.deploy_fee.read()
         }
 
-        /// Deterministically computes a Starknet address for an given EVM address
+        /// Deterministically computes a Starknet address for a given EVM address
         /// The address is computed as the Starknet address corresponding to the deployment of an EOA,
         /// Using its EVM address as salt, and KakarotCore as deployer.
         /// https://github.com/starkware-libs/cairo-lang/blob/master/src/starkware/starknet/core/os/contract_address/contract_address.cairo#L2
