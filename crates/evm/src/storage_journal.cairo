@@ -62,7 +62,7 @@ impl JournalImpl of JournalTrait {
     }
 
     /// Finalizes the global changes in the journal by writing them to the storage to be stored permanently onchain.
-    /// Global changes are relative the the execution of an entire transaction. `finalize_global` must be called upon finishing the transaction.
+    /// Global changes are relative to the execution of an entire transaction. `finalize_global` must be called upon finishing the transaction.
     fn finalize_global(ref self: Journal) {
         let mut global_keys = self.global_keys.span();
         loop {
